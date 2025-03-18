@@ -3,7 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Веломастерская</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Penza Bicycle</title>
+
+		<link rel="shortcut icon" href="static/images/logo.ico" type="image/x-icon">
+		<meta name="description" content="Главная страница">
+
+		<meta property="og:title" content="Penza Bicycle">
+		<meta property="og:description" content="Penza Bicycle">
+
+		<meta property="og:url" content="https://annddreyy.github.io/bicycle-store/">
+		<meta property="og:image" content="static/images/header_image.webp" />
+
+		<meta name="twitter:title" content="Penza Bicycle">
+		<meta name="twitter:description" content="Penza Bicycle">
+		<meta name="twitter:url" content="https://annddreyy.github.io/bicycle-store/">
+		<meta name="twitter:image:src" content="static/images/header_image.webp" />
 
 		<link rel="stylesheet" href="static/styles/style.css">
 		<link rel="stylesheet" href="static/styles/header.css">
@@ -23,13 +39,13 @@
 	</head>
 	<body>
 		<header>
-            <div class="circle circle-big" id="circle1" style="left: 10em; top: 5em"></div>
-		    <div class="circle circle-big" id="circle2" style="left: 22em; top: 16em"></div>
-            <div class="circle circle-medium" id="circle3" style="left: 7em; top: 14em"></div>
-		    <div class="circle circle-medium" id="circle4" style="left: 24em; top: 1em"></div>
-		    <div class="circle circle-medium" id="circle5" style="left: 18em; top: 25em"></div>
+            <div class="circle circle-big" style="left: 10em; top: 5em"></div>
+		    <div class="circle circle-big" style="left: 22em; top: 16em"></div>
+            <div class="circle circle-medium" style="left: 7em; top: 14em"></div>
+		    <div class="circle circle-medium" style="left: 24em; top: 1em"></div>
+		    <div class="circle circle-medium" style="left: 18em; top: 25em"></div>
 			<div class="top-part container">
-				<img src="static/images/logo-white 1.png" fetchpriority="high" alt="" />
+				<img src="static/images/logo-white 1.png" fetchpriority="high" alt="Логотип компании">
 				<ul class="top-part-navigation">
 					<li><a href="authorization.html" class="authorization-button">Войти</a></li>
 					<li><a href="registration.html" class="registration-button">Зарегистрироваться</a></li>
@@ -37,7 +53,7 @@
 			</div>
 			<nav class="container">
 				<ul class="navigation">
-					<div class="drop" role="none">
+					<div class="drop">
 						<li class="burger-button"><a href="#">&#9776;</a></li>
 						<ul class="nav-left-buttons">
 							<li><a href="repair.html" class="top-nav-link">Ремонт велосипелов</a></li>
@@ -51,23 +67,34 @@
 					<li>
 						<a href="bin.html" class="bin-button">
 							<img src="static/images/1 1.png" fetchpriority="high" alt="" />
-							Корзина
+							<span>Корзина</span>
 						</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="container bottom-part">
 				<p>
-					«ВелоМастерская» — ваш надежный партнер в мире велосипедов! Мы предлагаем полный спектр услуг по ремонту и обслуживанию двухколесного транспорта любой сложности и марки. От простой замены камеры или настройки тормозов до капитального ремонта и переборки — наши опытные и квалифицированные мастера справятся с любой задачей. Мы используем только качественные запчасти и современное оборудование. Проводим профессиональную диагностику, предлагаем индивидуальный подход и консультации по уходу за вашим велосипедом. В наличии широкий выбор аксессуаров и комплектующих. Доверьте нам свой велосипед, и он будет служить вам долго и надежно, доставляя удовольствие от каждой поездки! Мы ценим ваше время и предлагаем конкурентоспособные цены.
+					«Penza Bicycle» — ваш надежный партнер в мире велосипедов! 
+					Мы предлагаем полный спектр услуг по ремонту и обслуживанию 
+					двухколесного транспорта любой сложности и марки. От простой 
+					замены камеры или настройки тормозов до капитального ремонта и 
+					переборки — наши опытные и квалифицированные мастера справятся с 
+					любой задачей. Мы используем только качественные запчасти и 
+					современное оборудование. Проводим профессиональную диагностику, 
+					предлагаем индивидуальный подход и консультации по уходу за вашим 
+					велосипедом. В наличии широкий выбор аксессуаров и комплектующих. 
+					Доверьте нам свой велосипед, и он будет служить вам долго и надежно, 
+					доставляя удовольствие от каждой поездки! Мы ценим ваше время и 
+					предлагаем конкурентоспособные цены.
 				</p>
-				<img src="static/images/header_image.webp"  fetchpriority="high" alt="" />
+				<img src="static/images/header_image.webp" fetchpriority="high" aria-hidden="true" alt="">
 			</div>
 		</header>
 
 		<main>
 			<section class="container advantages">
 				<div class="advantage">
-					<img src="static/images/3 1.png" alt="" />
+					<img src="static/images/3 1.png" alt="" aria-hidden="true">
 					<h3>Качество</h3>
 					<p>
 						Доверяйте свой велосипед профессионалам - мы гарантируем
@@ -75,7 +102,7 @@
 					</p>
 				</div>
 				<div class="advantage">
-					<img src="static/images/2 1.png" alt="" />
+					<img src="static/images/2 1.png" alt="" aria-hidden="true">
 					<h3>Скорость</h3>
 					<p>
 						Оперативно вернем ваш велосипед в строй, чтобы вы как 
@@ -83,7 +110,7 @@
 					</p>
 				</div>
 				<div class="advantage">
-					<img src="static/images/5 1.png" alt="" />
+					<img src="static/images/5 1.png" alt="" aria-hidden="true">
 					<h3>Цена</h3>
 					<p>
 						Честные цены и прозрачное ценообразование - 
@@ -91,7 +118,7 @@
 					</p>
 				</div>
 				<div class="advantage">
-					<img src="static/images/4 1.png" alt="" />
+					<img src="static/images/4 1.png" alt="" aria-hidden="true">
 					<h3>Опыт</h3>
 					<p>
 						Многолетний опыт работы с велосипедами любых 
@@ -125,7 +152,7 @@
 						</div>
 					</div>
 					<div class="img-container">
-						<img src="static/images/bike-1.webp" id="bicycle-img" data-size="small" loading="lazy" alt="">
+						<img src="static/images/bike-1.webp" id="bicycle-img" data-size="small" loading="lazy" aralt="">
 						<div class="dot" id="elem1-dot"></div>
 						<div class="dot" id="elem2-dot"></div>
 						<div class="dot" id="elem3-dot"></div>
@@ -192,7 +219,7 @@
 			<section class="bottom">
 				<div class="container">
 					<p>
-						«ВелоМастерская» — это не просто ремонт велосипедов, 
+						«Penza Bicycle» — это не просто ремонт велосипедов, 
 						это команда профессионалов, увлеченных своим делом.
 						Мы стремимся не просто устранить поломку, а обеспечить долгую и
 						беспроблемную эксплуатацию вашего велосипеда. Наш опыт и знания 
@@ -201,10 +228,10 @@
 						каждого клиента и предлагаем индивидуальный подход, честные цены 
 						и оперативное выполнение работ. Доверьте нам заботу о вашем 
 						велосипеде, и мы гарантируем, что он будет готов к любым 
-						приключениям! Присоединяйтесь к сообществу «ВелоМастерской» и 
+						приключениям! Присоединяйтесь к сообществу «Penza Bicycle» и 
 						наслаждайтесь каждой поездкой!
 					</p>
-					<img src="static/images/c3c6a8e456837e34212d63ec5c951f5b.png" loading="lazy" alt="">
+					<img src="static/images/c3c6a8e456837e34212d63ec5c951f5b-min (1).png" loading="lazy" alt="">
 				</div>
 			</section>
 		</main>

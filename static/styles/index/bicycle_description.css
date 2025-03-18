@@ -1,6 +1,5 @@
-.bicycle-description{
+.bicycle-description {
     margin-top: 5em;
-    gap: 2em;
     background-color: var(--light-gray);
 }
 
@@ -48,14 +47,14 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 1px solid rgb(254, 254, 254);
-    background-color: gray;
+    border: 1px solid var(--white);
+    background-color: var(--dark-gray);
 }
 
 .dot[data-active] {
     transform: scale(1.5);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(96, 194, 255);
+    border: 1px solid var(--white);
+    background-color: var(--light-blue);
     cursor: pointer;
 }
 
@@ -64,9 +63,9 @@
         grid-template-columns: 1fr;
     }
     .left-column > *, .right-column > * {
+        flex-direction: row;
         align-content: space-around;
         flex-wrap: wrap;
-        flex-direction: row;
     }
 
     .img-container > img {

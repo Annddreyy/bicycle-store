@@ -2,7 +2,7 @@ let bicycle = document.querySelector('.bicycle-description');
 
 let activeDot;
 let activeDotDescription;
-bicycle.addEventListener('mouseover', function(event) {
+bicycle.addEventListener('pointerover', function(event) {
     let targetElem = event.target.closest('.bicycle-elem');
     let targetDot = event.target.closest('.dot');
 

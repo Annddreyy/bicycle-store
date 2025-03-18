@@ -112,7 +112,6 @@ header > * {
     position: absolute;
     border-radius: 50%;
     background-color: var(--light-green);
-    z-index: 0;
 }
 
 .circle-big {

@@ -2,9 +2,11 @@
 	margin-top: 5em;
 }
 
-.brands h2 {
+.brands > h2 {
 	font-size: 2rem;
 	font-weight: bold;
+	text-align: center;
+	margin-bottom: 3em;
 }
 
 .scroller__inner {
@@ -42,7 +44,6 @@
 }
 
 .scroller[data-animated="true"] .scroller__inner {
-	width: fit-content;
 	width: max-content;
 	flex-wrap: nowrap;
 	animation: scroll var(--_animation-duration, 40s)
@@ -55,11 +56,6 @@
 
 .scroller[data-speed="fast"] {
 	--_animation-duration: 15s;
-}
-
-.brands > h2 {
-	text-align: center;
-	margin-bottom: 3em;
 }
 
 @keyframes scroll {
@@ -81,5 +77,11 @@
 
 	.brands h2 {
 		font-size: var(--fz-big);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.scroller[data-animated="true"] .scroller__inner {
+		animation-play-state: paused;
 	}
 }
