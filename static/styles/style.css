@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Imprima", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: var(--fz-medium);
+	line-height: 1.5;
+}
+
+@property --dark-green {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #4b8f59;
+}
+
+@property --light-green {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #5ba36a;
+}
+
+@property --light-gray {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #e8e8e8;
+}
+
+@property --white {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #ffffff;
+}
+
+@property --black {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #000000;
+}
+
+@property --light-gold {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #a08e64;
+}
+
+@property --fz-tiny {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 12px;
+}
+
+@property --fz-small {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 14px;
+}
+
+@property --fz-medium {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 16px;
+}
+
+@property --fz-larger {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 20px;
+}
+
+@property --fz-big {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 24px;
+}
+
+:root {
+	--dark-green: #396e44;
+	--light-gold: #74643e;
+	--white: #ffffff;
+	--black: #000000;
+	--light-green: #5ba36a;
+	--light-gray: #e8e8e8;
+
+	--fz-tiny: 0.75rem;
+	--fz-small: 0.875rem;
+	--fz-medium: 1rem;
+	--fz-larger: 1.25rem;
+	--fz-big: 1.5rem;
+}
+
+.container {
+	width: 90%;
+	max-width: 110em;
+	margin: auto;
+}
+
+@media (max-width: 800px) {
+	*,
+	*::after,
+	*::before {
+		font-size: var(--fz-small);
+	}
+}

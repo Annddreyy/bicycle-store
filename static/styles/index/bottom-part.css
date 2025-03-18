@@ -1,0 +1,29 @@
+.bottom {
+    background-color: var(--light-gray);
+    margin-top: 5em;
+}
+
+.bottom > .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em 0;
+    gap: 5em;
+}
+
+.bottom p {
+    color: var(--black);
+}
+
+.bottom img {
+    background-color: var(--dark-green);
+    border-radius: 50%;
+    max-width: 80%;
+    justify-self: center;
+}
+
+@media (max-width: 1100px) {
+    .bottom > .container {
+        grid-template-columns: 1fr;
+    }
+}
