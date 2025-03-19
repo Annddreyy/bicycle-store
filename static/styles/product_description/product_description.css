@@ -1,0 +1,24 @@
+h1 {
+    font-size: var(--fz-big);
+    font-weight: bold;
+    margin: 3em 0;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.description img {
+    max-width: 70%;
+}
+
+.text-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+.tag {
+    font-weight: bold;
+}
