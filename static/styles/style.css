@@ -71,6 +71,12 @@
 	initial-value: #60c2ff;
 }
 
+@property --red {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: red;
+}
+
 @property --fz-tiny {
 	syntax: "<length>";
 	inherits: true;
@@ -112,6 +118,7 @@
     --dark-gray: gray;
     --light-blue: #60c2ff;
 	--medium-gray: #1F1F1F;
+	--red: red;
 
 
 	--fz-tiny: 0.75rem;
