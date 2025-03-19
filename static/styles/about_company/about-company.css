@@ -43,3 +43,19 @@ main > h1 {
     opacity: 1;
     transform: translate(0);
 }
+
+@media (max-width: 650px) {
+    .text-with-image {
+        flex-direction: column !important;
+    }
+
+    .text-with-image > img {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-with-image > img {
+        max-width: 50%;
+    }
+}

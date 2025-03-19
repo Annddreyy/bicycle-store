@@ -7,7 +7,7 @@ window.addEventListener('scroll', function(event) {
         let windowBottom = window.innerHeight;
         console.log( windowBottom );
         
-        if (top <= windowBottom && top >= 0) {
+        if (top <= windowBottom && bottom >= 0) {
             image.classList.add('active');
         } else {
             image.classList.remove('active');

@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(to bottom, #4B8F59, #32683E) fixed no-repeat;
+
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--light-green);
+    z-index: -1;
+}
+
+.circle-big {
+    width: 112px;
+    height: 112px;
+}
+
+.circle-medium {
+    width: 80px;
+    height: 80px;
+}
+
+form {
+    display: flex;
+    width: 40em;
+    margin: auto;
+    background-color: var(--medium-gray);
+    color: var(--white);
+    padding: 2em;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+form > h1 {
+    text-align: center;
+    font-size: var(--fz-big);
+    margin-bottom: 1em;
+}
+
+.form-elem > input {
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    padding: 8px 1em;
+    width: 380px;
+}
+
+.form-elem img {
+    width: 32px;
+    height: 32px;
+}
+
+.form-elem {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.buttons * {
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+}
+
+.form-main-part {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#reg-button, #auth-button {
+    background-color: var(--light-gold);
+    border-radius: 100px;
+    padding: 1em 1em;
+    margin-left: 2em;
+}
+
+#auth-button {
+    padding: 1em 1.5em;
+    margin-left: 0;
+    background-color: var(--dark-gold);
+    margin-right: 1em;
+}
+
+@media (max-width: 1250px) {
+    .circle {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-elem > input {
+        width: 300px;
+    }
+    .buttons {
+        margin: 2em auto;
+        gap: 1em;
+    }
+
+    form {
+        width: max-content;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-elem > input {
+        width: 250px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .buttons {
+        margin-bottom: 1em;
+    }
+
+    #auth-button {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: var(--fz-larger);
+    }
+}
+
+@media (max-width: 400px) {
+    .form-elem > img {
+        display: none;
+    }
+    #reg-button {
+        margin-left: 0.5em;
+    }
+    form {
+        padding: 1.25em;
+    }
+}
