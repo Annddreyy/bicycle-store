@@ -9,7 +9,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.description img {
+.description > img {
     max-width: 70%;
 }
 
@@ -21,4 +21,14 @@ h1 {
 
 .tag {
     font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .description {
+        grid-template-columns: 1fr;
+    }
+
+    .description > img {
+        margin-bottom: 5em;
+    }
 }
