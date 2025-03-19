@@ -43,6 +43,12 @@ h1 {
     margin-bottom: 2em;
 }
 
+.group {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
 #select-brand {
     border: 1px solid var(--dark-gray);
     border-radius: 100px;
@@ -146,4 +152,57 @@ h1 {
     background-color: var(--dark-green);
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .cards-container {
+        flex-direction: column;
+    }
+    
+    .category-panel {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+}
+
+@media (max-width: 1050px) {
+    .main-part {
+        margin: 2em 0;
+    }
+    
+    .buttons-group > .group:first-of-type {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #select-brand {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .card > h3 {
+        font-size: var(--fz-larger);
+    }
+}
+
+@media (max-width: 650px) {
+    .buttons-group > .group:last-of-type {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .buttons-group {
+        flex-direction: column;
+        gap: 1em;
+    }
 }

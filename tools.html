@@ -81,29 +81,33 @@
 					<section class="main-part">
 						<div class="sort-buttons">
 							<div class="buttons-group">
-								<input type="text" list="brands" id="select-brand" placeholder="Бренд">
-								<datalist id="brands">
-									<option value="Бранд 1"></option>
-									<option value="Бранд 2"></option>
-									<option value="Бранд 3"></option>
-									<option value="Бранд 4"></option>
-									<option value="Бранд 5"></option>
-								</datalist>
-								<div id="button-price">
-									<span>От:</span>
-									<input type="number" placeholder="100">
-									<span>до:</span>
-									<input type="number" placeholder="1000000">
+								<div class="group">
+									<input type="text" list="brands" id="select-brand" placeholder="Бренд">
+									<datalist id="brands">
+										<option value="Бранд 1"></option>
+										<option value="Бранд 2"></option>
+										<option value="Бранд 3"></option>
+										<option value="Бранд 4"></option>
+										<option value="Бранд 5"></option>
+									</datalist>
+									<div id="button-price">
+										<span>От:</span>
+										<input type="number" placeholder="100">
+										<span>до:</span>
+										<input type="number" placeholder="1000000">
+									</div>
 								</div>
-								<div id="show-button">
-									Показать
-								</div>
-								<div id="reset-filters">
-									Очистить фильтры
+								<div class="group">
+									<div id="show-button">
+										Показать
+									</div>
+									<div id="reset-filters">
+										Очистить фильтры
+									</div>
 								</div>
 							</div>
 							<div class="buttons-group">
-								<div class="left">
+								<div class="in-stock-btn">
 									<input type="checkbox" name="in-stock" id="in-stock">
 									<label for="in-stock">В наличии</label>
 								</div>
