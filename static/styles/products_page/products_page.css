@@ -1,0 +1,149 @@
+h1 {
+    font-size: var(--fz-big);
+    font-weight: bold;
+    margin: 2em 0;
+}
+
+.cards-container {
+    display: flex;
+    gap: 5em;
+    margin-bottom: 3em;
+}
+
+.category-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.category {
+    position: relative;
+    width: max-content;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.category::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid var(--medium-gray);
+    left: 0;
+    right: -2em;
+    bottom: -0.5em;
+}
+
+.main-part {
+    margin: auto;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#select-brand {
+    border: 1px solid var(--dark-gray);
+    border-radius: 100px;
+    padding: 0.5em 1em;
+}
+
+#button-price {
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    border: 1px solid var(--dark-gray);
+    display: flex;
+    align-items: center;
+}
+
+#button-price > input {
+    width: 7em;
+    margin: 0 0.5em;
+    padding-left: 0.5em;
+    border: none;
+    outline: none;
+}
+
+#show-button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 0.75em 2em;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#reset-filters {
+    cursor: pointer;
+}
+
+.sort-by {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.sort-by > button {
+    border: none;
+    background-color: transparent;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+}
+
+.sort-by > button:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    width: min-content;
+    box-shadow: 2px 2px 2px 2px var(--light-gray);
+    text-decoration: none;
+}
+
+.card > img {
+    align-self: center;
+    margin-bottom: 2em;
+}
+
+.product-category {
+    font-size: var(--fz-small);
+    color: var(--dark-gray);
+}
+
+.card > h3 {
+    width: 70%;
+    font-size: var(--fz-larger);
+    color: var(--black);
+}
+
+.card-bottom {
+    padding-top: 1em;
+    display: flex;
+    gap: 7em;
+    align-items: center;
+}
+
+.card-bottom > .price {
+    color: var(--dark-green);
+    font-size: var(--fz-big);
+    width: max-content;
+}
+
+.card-bottom > button {
+    padding: 0.7em 1em;
+    border-radius: 50%;
+    background-color: var(--dark-green);
+    border: none;
+    cursor: pointer;
+}
