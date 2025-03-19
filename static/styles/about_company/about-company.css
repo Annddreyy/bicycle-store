@@ -1,0 +1,45 @@
+main {
+    padding: 3em 0;
+}
+
+main > h1 {
+    font-size: var(--fz-big);
+    margin-bottom: 3em;
+}
+
+.about-company {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.text-with-image {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.text-with-image > img {
+    opacity: 0;
+    max-width: 30%;
+    height: auto;
+    transition: all 1s;
+}
+
+
+.text-with-image[data-direction="left"] {
+    flex-direction: row-reverse;
+}
+
+.text-with-image[data-direction="left"] > img {
+    transform: translateX(-30px);
+}
+
+.text-with-image[data-direction="right"] > img {
+    transform: translateX(30px);
+}
+
+.text-with-image > img.active {
+    opacity: 1;
+    transform: translate(0);
+}
