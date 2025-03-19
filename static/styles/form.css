@@ -1,0 +1,145 @@
+body {
+    background: linear-gradient(to bottom, #4B8F59, #32683E) fixed no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    width: 40em;
+    margin: auto;
+    margin-top: 3em;
+    padding: 2em;
+
+    background-color: var(--medium-gray);
+    color: var(--white);
+    border-radius: 12px;
+}
+
+form > h1 {
+    text-align: center;
+    font-size: var(--fz-big);
+    margin-bottom: 1em;
+}
+
+.form-main-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: auto;
+}
+
+.form-elem > input {
+    width: 380px;
+    padding: 8px 1em;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+
+.buttons * {
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+}
+
+.primary-button, .secondary-button {
+    padding: 1em 1em;
+    margin-left: 2em;
+    border-radius: 100px;
+    background-color: var(--light-gold);
+}
+
+.secondary-button {
+    padding: 1em 1.5em;
+    margin-left: 0;
+    margin-right: 1em;
+    background-color: var(--dark-gold);
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--light-green);
+    z-index: -1;
+}
+
+.circle-big {
+    width: 112px;
+    height: 112px;
+}
+
+.circle-medium {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 1250px) {
+    .circle {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-elem > input {
+        width: 300px;
+    }
+    .buttons {
+        margin: 2em auto;
+        gap: 1em;
+    }
+    form {
+        width: max-content;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: var(--fz-larger);
+    }
+    
+    .form-elem > input {
+        width: 250px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .buttons {
+        margin-bottom: 1em;
+    }
+
+    .secondary-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    form {
+        padding: 1.3em;
+    }
+
+    .form-elem > img {
+        display: none;
+    }
+    
+    .primary-button {
+        margin-left: 0.5em;
+    }
+}
