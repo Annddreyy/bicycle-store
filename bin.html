@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="static/scripts/bin/bin.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Penza Bicycle</title>
+
+		<link rel="shortcut icon" href="static/images/logo.ico" type="image/x-icon">
+		<meta name="description" content="Главная страница">
+
+		<meta property="og:title" content="Penza Bicycle">
+		<meta property="og:description" content="Penza Bicycle">
+
+		<meta property="og:url" content="https://annddreyy.github.io/bicycle-store/">
+		<meta property="og:image" content="static/images/header_image.webp" />
+
+		<meta name="twitter:title" content="Penza Bicycle">
+		<meta name="twitter:description" content="Penza Bicycle">
+		<meta name="twitter:url" content="https://annddreyy.github.io/bicycle-store/">
+		<meta name="twitter:image:src" content="static/images/header_image.webp" />
+
+		<link rel="stylesheet" href="static/styles/style.css">
+		<link rel="stylesheet" href="static/styles/header.css">
+		<link rel="stylesheet" href="static/styles/footer.css">
+        <link rel="stylesheet" href="static/styles/header-min.css">
+		<link rel="stylesheet" href="static/styles/footer-min.css">
+
+        <link rel="stylesheet" href="static/styles/bin/bin.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Imprima"
+			rel="stylesheet"
+		>
+
+	</head>
+	<body>
+		<header>
+			<div class="top-part container">
+				<a href="index.html"><img src="static/images/logo-white 1.png" fetchpriority="high" alt="Логотип компании"></a>
+				<ul class="top-part-navigation">
+					<li><a href="authorization.html" class="authorization-button">Войти</a></li>
+					<li><a href="registration.html" class="registration-button">Зарегистрироваться</a></li>
+				</ul>
+			</div>
+			<nav class="container">
+				<ul class="navigation">
+					<div class="drop">
+						<li class="burger-button"><a href="#">&#9776;</a></li>
+						<ul class="nav-left-buttons">
+							<li><a href="repair.html" class="top-nav-link">Ремонт велосипелов</a></li>
+							<li><a href="accessories.html" class="top-nav-link">Аксессуары</a></li>
+							<li><a href="spare_parts.html" class="top-nav-link">Запчасти</a></li>
+							<li><a href="tools.html" class="top-nav-link">Инструменты</a></li>
+							<li><a href="about_company.html" class="top-nav-link">О компании</a></li>
+							<li><a href="workshop_addresses.html" class="top-nav-link">Адреса мастерских</a></li>
+						</ul>
+					</div>
+					<li>
+						<a href="bin.html" class="bin-button">
+							<img src="static/images/1 1.png" fetchpriority="high" alt="" />
+							<span>Корзина</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+            <h1>Корзина</h1>
+            <section class="bin">
+                <table class="bin-table">
+                    <thead class="bin-table-head">
+                        <tr class="head-row">
+                            <th class="col-title">Фото</th>
+                            <th class="col-title">Название</th>
+                            <th class="col-title">Цена</th>
+                            <th class="col-title">Количество</th>
+                            <th class="col-title">Итого</th>
+                            <th class="col-title"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="bin-table-body">
+                    </tbody>
+                </table>
+            </section>
+		</main>
+		<footer>
+			<div class="container">
+				©2025, Penza Bicycle, все права защищены
+			</div>
+		</footer>
+		<script src="static/scripts/bin/bin.js"></script>
+	</body>
 </html>

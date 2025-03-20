@@ -10,8 +10,9 @@ document.addEventListener('click', function(event) {
 
     if (!find) {
         products.push( {
+            src: card.querySelector('img').src,
             title: card.querySelector('h3').textContent,
-            price: card.querySelector('.price').textContent,
+            price: card.querySelector('.price').textContent.replace(' ₽', ''),
             count: 1
         } );
     } else {
