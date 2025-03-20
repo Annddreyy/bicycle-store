@@ -34,6 +34,7 @@ function setLabel() {
 
 function sumAllProducts() {
     const sumElem = document.querySelector('.sum');
+    if (!sumElem) return;
     let sum = products.reduce((sum, product) => sum + product.price * product.count, 0);
     sumElem.textContent = `${sum} ₽`;
 }

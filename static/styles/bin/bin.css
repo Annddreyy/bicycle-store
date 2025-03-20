@@ -134,6 +134,10 @@ input[type="submit"] {
     .product-image {
         width: 100px;
     }
+
+    .order {
+        width: 350px;
+    }
 }
 
 @media (max-width: 650px) {
