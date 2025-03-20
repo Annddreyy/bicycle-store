@@ -94,6 +94,7 @@ h1 {
     background-color: transparent;
     padding: 0.5em 1em;
     border-radius: 100px;
+    color: var(--black);
 }
 
 .sort-by > button:hover {
@@ -127,7 +128,7 @@ h1 {
     color: var(--dark-gray);
 }
 
-.card > h3 {
+.card > h2 {
     width: 70%;
     font-size: var(--fz-larger);
     color: var(--black);
@@ -185,7 +186,7 @@ h1 {
 }
 
 @media (max-width: 800px) {
-    .card > h3 {
+    .card > h2 {
         font-size: var(--fz-larger);
     }
 }
