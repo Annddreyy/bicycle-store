@@ -1,8 +1,9 @@
 let products = JSON.parse(localStorage.getItem('bin')) || [];
-
 const productsTable = document.querySelector('.bin-table-body');
 
 function updateProductTable() {
+    setLabel();
+    sumAllProducts();
     products.forEach(product => {
         productsTable.insertAdjacentHTML('beforeend', `
             <tr class="product-description">
@@ -21,6 +22,20 @@ function updateProductTable() {
             </tr>
         `)
     })
+}
+
+function setLabel() { 
+    if (products.length == 0) {
+        const main = document.querySelector('main');
+        main.insertAdjacentHTML('beforeend', `<p>В корзине нет товаров</p>`);
+        document.querySelector('.bin').remove();
+    }
+}
+
+function sumAllProducts() {
+    const sumElem = document.querySelector('.sum');
+    let sum = products.reduce((sum, product) => sum + product.price * product.count, 0);
+    sumElem.textContent = `${sum} ₽`;
 }
 
 function findProductDescription(title) {
@@ -45,6 +60,8 @@ function updateProductCount(title, increase = true) {
 
     let result = findDescription.querySelector('.product-result');
     result.textContent = `${find.count * find.price} ₽`;
+
+    sumAllProducts();
     
     localStorage.setItem('bin', JSON.stringify(products));
 }
@@ -53,6 +70,10 @@ function deleteProduct(title) {
     const findDescription = findProductDescription(title);
     products = products.filter(item => item.title != title);
     findDescription.remove();
+    setLabel();
+
+    sumAllProducts();
+
     localStorage.setItem('bin', JSON.stringify(products));
 }
 
