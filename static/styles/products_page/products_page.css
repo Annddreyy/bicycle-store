@@ -128,7 +128,7 @@ h1 {
     color: var(--dark-gray);
 }
 
-.card > h2 {
+.card h2 {
     width: 70%;
     font-size: var(--fz-larger);
     color: var(--black);

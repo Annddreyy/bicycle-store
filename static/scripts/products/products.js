@@ -5,13 +5,13 @@ document.addEventListener('click', function(event) {
     let card = event.target.closest('.card');
     if (!target) return;
 
-    const title = card.querySelector('h3').textContent;
+    const title = card.querySelector('h2').textContent;
     let find = products.find(item => item.title === title);
 
     if (!find) {
         products.push( {
             src: card.querySelector('img').src,
-            title: card.querySelector('h3').textContent,
+            title: card.querySelector('h2').textContent,
             price: card.querySelector('.price').textContent.replace(' ₽', ''),
             count: 1
         } );
