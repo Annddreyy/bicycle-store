@@ -52,6 +52,10 @@ h1 {
 }
 
 
+.product-image img {
+    max-width: 120px;
+}
+
 /* Форма оформления заказа */
 .order {
     width: 580px;
@@ -121,10 +125,6 @@ input[type="submit"] {
 }
 
 @media (max-width: 850px) {
-    .bin-table img {
-        max-width: 80%;
-    }
-
     .head-row, .tbody-td {
         padding: 0.5em;
     }
@@ -140,7 +140,7 @@ input[type="submit"] {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     h1 {
         font-size: var(--fz-larger);
     }
